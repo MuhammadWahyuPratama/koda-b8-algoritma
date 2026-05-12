@@ -23,13 +23,24 @@ Membuat flowchart untuk program menghitung luas dan keliling lingkaran
 flowchart TD
 a@{shape: circle, label : "start"}
 b@{shape: lean-r, label : r}
+z@{shape: diamond, label : "r % 7 == 0"}
 c@{shape: rect, label : phi= 22/7 }
-d@{shape: lean-r , label: phi * r * r}
 e@{shape: lean-l , label: "{ 'Luas Lingkaran' }"}
-j@{shape: rect, label : phi=3.14}
-k@{shape: lean-r , label: "2 * phi * r"}
-l@{shape: lean-l , label: "{ 'Keliling Lingkaran' }"}
+y@{shape : rect, label : "luas= phi * r * r"}
+x@{shape : rect, label : "kel= 2 * r * r"}
+j@{shape: rect, label : phi= 3.14}
+u@{shape: lean-r , label: "{ 'Keliling Lingkaran' }"}
 m@{shape: dbl-circ, label: "Stop"}
-a-->b-->c-->d-->e-->m
-b-->j-->k-->l-->m
+a-->b
+b-->z
+z--false-->c
+z--true-->j
+j-->y
+c-->y
+y-->e
+e-->x
+x-->u
+u-->m
+
+
 ```
