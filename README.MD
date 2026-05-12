@@ -28,3 +28,22 @@ f@{shape : dbl-circ, label : "Finish" }
 a-->b-->c-->d-->e-->f
 
 ```
+
+## Pseudo-code
+
+```pseudo
+MULAI
+
+DECLARE p : INTEGER
+DECLARE l : INTEGER
+DECLARE luas : INTEGER
+
+INPUT p
+INPUT l
+
+luas <- p * l
+
+OUTPUT "Luas Persegi panjang =" , luas
+
+SELESAI
+```
