@@ -22,24 +22,17 @@ Membuat flowchart untuk program menghitung luas dan keliling lingkaran
 ```mermaid
 flowchart TD
 a@{shape: circle, label : "start"}
-b@{shape: lean-r, label : Jari-jari= "r"}
-c@{shape: rect, label : phi="3.14 or 22/7"}
+b@{shape: lean-r, label : r}
+c@{shape: rect, label : phi= 22/7 }
 d@{shape: lean-r , label: phi * r * r}
-e@{shape: lean-l , label: "Luas Lingkaran"}
-
-
-
-h@{shape: circle, label : "start"}
-i@{shape: lean-r, label : Jari-jari= "r"}
-j@{shape: rect, label : phi="3.14 or 22/7"}
+e@{shape: lean-l , label: "{ 'Luas Lingkaran' }"}
+j@{shape: rect, label : phi=3.14}
 k@{shape: lean-r , label: "2 * phi * r"}
-l@{shape: lean-l , label: "Keliling Lingkaran"}
-
+l@{shape: lean-l , label: "{ 'Keliling Lingkaran' }"}
 m@{shape: dbl-circ, label: "Stop"}
-a-->b-->c-->d-->e
-
-h-->i-->j-->k-->l
-
-e-->m
-l-->m
+a-->b-->c-->d-->e-->m
+b-->j-->k-->l-->m
 ```
+
+a-->b-->c-->d-->e-->m
+b-->j-->k
