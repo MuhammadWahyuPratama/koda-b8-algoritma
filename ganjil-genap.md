@@ -28,3 +28,17 @@ start-->bilangan-->proses-->hasil
 proses-->hasil2-->selesai
 hasil-->selesai
 ```
+
+## Pseudo-code
+
+```pseudo
+DECLARE Bilangan: INTEGER
+INPUT Bilangan
+
+IF Bilangan % 2 == 0 THEN
+    OUTPUT "GENAP"
+ELSE
+    OUTPUT "GANJIL"
+ENDIF
+
+```
