@@ -37,4 +37,33 @@ d--false-->f
 f-->g
 e-->g
 g-->z
+
+
+```
+
+## Pseudo-code
+
+```pseudo
+
+MULAI
+
+DECLARE namaSiswa : STRING
+DECLARE nilai : INTEGER
+DECLARE hasil : STRING
+
+INPUT namaSiswa
+INPUT nilai
+
+IF NILAI >= 75 THEN
+    hasil <- "Lulus"
+ELSE
+    hasil <- "Tidak Lulus"
+ENDIF
+
+OUTPUT "Nama Siswa =" , namaSiswa
+OUTPUT "Hasilnya adalah = " , hasil
+
+SELESAI
+
+
 ```
