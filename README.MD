@@ -12,7 +12,7 @@ Membuat algoritma menentukan siswa yang lulus dan tidak lulus
 4. periksa nilai siswa
 5. jika nilai lebih besar dari 75 maka siswa lulus
 6. jika tidak maka tidak lulus
-7. hasil
+7. tampilkan hasil nilai dan nama siswanya
 8. selesai
 
 ## Flowchart
@@ -21,12 +21,13 @@ Membuat algoritma menentukan siswa yang lulus dan tidak lulus
 flowchart LR
 
 a@{shape: circle , label : "Start"}
-b@{shape: lean-r, label : "Namasiswa"}
+b@{shape: lean-r, label : "namaSiswa"}
 c@{shape: lean-r, label : "Nilai"}
 d@{shape: diamond, label: "Nilai >= 75 "}
-e@{shape: rect, label : hasil="Lulus"}
-f@{shape: rect, label : hasil="Tidak Lulus"}
-g@{shape: lean-r, label : "hasil"}
+e@{shape: lean-l, label : hasil="Lulus"}
+f@{shape: lean-l, label : hasil="Tidak Lulus"}
+g@{shape: lean-r, label : "namaSiswa"}
+h@{shape: lean-r, label : "hasil"}
 z@{shape: dbl-circ, label : "Finish"}
 
 a-->b
@@ -36,7 +37,8 @@ d--true-->e
 d--false-->f
 f-->g
 e-->g
-g-->z
+g-->h
+h-->z
 
 
 ```
@@ -61,7 +63,7 @@ ELSE
 ENDIF
 
 OUTPUT "Nama Siswa =" , namaSiswa
-OUTPUT "Hasilnya adalah = " , hasil
+OUTPUT "Hasilnya adalah =" , hasil
 
 SELESAI
 
