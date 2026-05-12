@@ -5,8 +5,6 @@
 Algoritma yang ditulis untuk menyelesaikan masalah memindahkan air dalam gelas.
 
 1. Mulai
-2. siapkan gelas dan cangkir
-3. tuangkan air ke dalam gelas
-4. tuangkan air ke dalam cangkir
-5. pindahkan air yang di dalam cangkir ke dalam gelas
-6. selesai
+2. siapkan 2 gelas yang berisi (A) dan tidak berisi (B)
+3. pindahkan air dari gelas(A) yang kosong ke dalam gelas yang berisi (B)
+4. selesai
