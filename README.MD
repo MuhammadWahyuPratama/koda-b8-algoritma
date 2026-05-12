@@ -14,3 +14,27 @@ Membuat algoritma menentukan siswa yang lulus dan tidak lulus
 6. jika tidak maka tidak lulus
 7. hasil
 8. selesai
+
+## Flowchart
+
+```mermaid
+flowchart LR
+
+a@{shape: circle , label : "Start"}
+b@{shape: lean-r, label : "Namasiswa"}
+c@{shape: lean-r, label : "Nilai"}
+d@{shape: diamond, label: "Nilai >= 75 "}
+e@{shape: rect, label : "Lulus"}
+f@{shape: rect, label : "Tidak Lulus"}
+g@{shape: lean-r, label : "hasil"}
+z@{shape: dbl-circ, label : "Finish"}
+
+a-->b
+b-->c
+c-->d
+d--true-->e
+d--false-->f
+f-->g
+e-->g
+g-->z
+```
