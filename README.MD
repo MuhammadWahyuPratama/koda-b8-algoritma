@@ -24,8 +24,8 @@ a@{shape: circle , label : "Start"}
 b@{shape: lean-r, label : "Namasiswa"}
 c@{shape: lean-r, label : "Nilai"}
 d@{shape: diamond, label: "Nilai >= 75 "}
-e@{shape: rect, label : "Lulus"}
-f@{shape: rect, label : "Tidak Lulus"}
+e@{shape: rect, label : hasil="Lulus"}
+f@{shape: rect, label : hasil="Tidak Lulus"}
 g@{shape: lean-r, label : "hasil"}
 z@{shape: dbl-circ, label : "Finish"}
 
