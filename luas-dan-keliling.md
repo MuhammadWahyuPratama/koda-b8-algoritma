@@ -25,7 +25,7 @@ a@{shape: circle, label : "start"}
 b@{shape: lean-r, label : Jari-jari= "r"}
 c@{shape: rect, label : phi="3.14 or 22/7"}
 d@{shape: lean-r , label: phi * r * r}
-e@{shape: lean-r , label: "Luas Lingkaran"}
+e@{shape: lean-l , label: "Luas Lingkaran"}
 
 
 
@@ -33,7 +33,7 @@ h@{shape: circle, label : "start"}
 i@{shape: lean-r, label : Jari-jari= "r"}
 j@{shape: rect, label : phi="3.14 or 22/7"}
 k@{shape: lean-r , label: "2 * phi * r"}
-l@{shape: lean-r , label: "Keliling Lingkaran"}
+l@{shape: lean-l , label: "Keliling Lingkaran"}
 
 m@{shape: dbl-circ, label: "Stop"}
 a-->b-->c-->d-->e
