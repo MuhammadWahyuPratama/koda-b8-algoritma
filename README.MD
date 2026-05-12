@@ -9,11 +9,10 @@ Membuat algoritma menentukan siswa yang lulus dan tidak lulus
 1. Mulai
 2. Masukan nama siswa
 3. Masukan nilai siswa
-4. periksa nilai siswa
-5. jika nilai lebih besar dari 75 maka siswa lulus
-6. jika tidak maka tidak lulus
-7. tampilkan nama siswa dan hasilnya
-8. selesai
+4. jika nilai lebih besar dari sama dengan 75 maka nilai hasil adalah lulus
+5. jika tidak maka tidak lulus
+6. outputnya adalah namaSiswa dan hasil nilainya dinyatakan berdasarkan nilai dari hasil
+7. selesai
 
 ## Flowchart
 
@@ -22,12 +21,12 @@ flowchart LR
 
 a@{shape: circle , label : "Start"}
 b@{shape: lean-r, label : "namaSiswa"}
-c@{shape: lean-r, label : "Nilai"}
-d@{shape: diamond, label: "Nilai >= 75 "}
-e@{shape: lean-l, label : hasil="Lulus"}
-f@{shape: lean-l, label : hasil="Tidak Lulus"}
-g@{shape: lean-r, label : "namaSiswa"}
-h@{shape: lean-r, label : "hasil"}
+c@{shape: lean-r, label : "nilai"}
+d@{shape: diamond, label: "nilai >= 75 "}
+e@{shape: rect, label : hasil="Lulus"}
+f@{shape: rect, label : hasil="Tidak Lulus"}
+g@{shape: lean-r, label : '"{namaSiswa} hasil nilainya diyatakan {hasil}"'}
+
 z@{shape: dbl-circ, label : "Finish"}
 
 a-->b
@@ -37,8 +36,7 @@ d--true-->e
 d--false-->f
 f-->g
 e-->g
-g-->h
-h-->z
+g-->z
 
 
 ```
@@ -47,7 +45,6 @@ h-->z
 
 ```pseudo
 
-MULAI
 
 DECLARE namaSiswa : STRING
 DECLARE nilai : INTEGER
@@ -62,10 +59,7 @@ ELSE
     hasil <- "Tidak Lulus"
 ENDIF
 
-OUTPUT "Nama Siswa =" , namaSiswa
-OUTPUT "Hasilnya adalah =" , hasil
-
-SELESAI
+OUTPUT namaSiswa, "hasil nilainya dinyatkan", hasil
 
 
 ```
