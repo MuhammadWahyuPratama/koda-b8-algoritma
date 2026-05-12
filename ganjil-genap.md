@@ -19,7 +19,7 @@ flowchart TD
 
 start@{shape: circle, label: "start"}
 bilangan@{shape : lean-r , label: "Bilangan"}
-proses@{shape: rect, label: "dibagi habis 2"}
+proses@{shape: diamond, label: "dibagi habis 2"}
 hasil@{shape: lean-r , label: true= "genap"}
 hasil2@{shape: lean-r , label: false = "ganjil"}
 selesai@{shape: dbl-circ, label: "stop"}
