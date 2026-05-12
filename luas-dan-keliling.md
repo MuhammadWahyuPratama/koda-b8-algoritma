@@ -33,8 +33,8 @@ u@{shape: lean-r , label: "{ 'Keliling Lingkaran' }"}
 m@{shape: dbl-circ, label: "Stop"}
 a-->b
 b-->z
-z--false-->c
-z--true-->j
+z--true-->c
+z--false-->j
 j-->y
 c-->y
 y-->e
