@@ -12,7 +12,7 @@ Membuat algoritma menentukan siswa yang lulus dan tidak lulus
 4. periksa nilai siswa
 5. jika nilai lebih besar dari 75 maka siswa lulus
 6. jika tidak maka tidak lulus
-7. tampilkan hasil nilai dan nama siswanya
+7. tampilkan nama siswa dan hasilnya
 8. selesai
 
 ## Flowchart
