@@ -33,6 +33,3 @@ m@{shape: dbl-circ, label: "Stop"}
 a-->b-->c-->d-->e-->m
 b-->j-->k-->l-->m
 ```
-
-a-->b-->c-->d-->e-->m
-b-->j-->k
