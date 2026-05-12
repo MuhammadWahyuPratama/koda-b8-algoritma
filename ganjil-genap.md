@@ -19,19 +19,20 @@ flowchart TD
 
 start@{shape: circle, label: "start"}
 bilangan@{shape : lean-r , label: "Bilangan"}
-proses@{shape: diamond, label: "dibagi habis 2"}
-hasil@{shape: lean-r , label: true= "genap"}
-hasil2@{shape: lean-r , label: false = "ganjil"}
+proses@{shape: diamond, label: "Bilangan % 2 == 0"}
+hasil@{shape: lean-r , label: '"genap"'}
+hasil2@{shape: lean-r , label: '"ganjil"' }
 selesai@{shape: dbl-circ, label: "stop"}
 
-start-->bilangan-->proses-->hasil
-proses-->hasil2-->selesai
+start-->bilangan-->proses--true-->hasil
+proses--false-->hasil2-->selesai
 hasil-->selesai
 ```
 
 ## Pseudo-code
 
 ```pseudo
+
 DECLARE Bilangan: INTEGER
 INPUT Bilangan
 
